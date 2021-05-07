@@ -1,0 +1,22 @@
+centres{
+    margin: 0px;
+    background-color: pink;
+}
+
+centre {
+    padding: 30px;
+}
+
+name, address, phone {
+    display: block;
+}
+name {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+}

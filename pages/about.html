@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/index.css" rel="stylesheet" />
+    <link href="../styles/about.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Inconsolata&family=Lexend+Mega&family=Arapey&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>About</title>
+</head>
+<body id="feedback-form">
+    <nav>
+        <ul>
+            <li class="logo"><p>D&#128151;nating&nbsp;Plasma</p></li>
+            <li class="nav-links"><a href="../index.html">Home</a></li>
+            <li class="nav-links"><a href="./plasma-donation.html">Plasma Donation</a></li>
+            <li class="nav-links"><a href="./awareness.html">International Plasma Awareness Week</a></li>
+            <li class="nav-links"><a href="#">About us</a></li>
+            <li class="nav-button"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function() {
+            $('.nav-button').click(function() {
+            $('.nav-links').toggleClass('show')
+            $('ul li').toggleClass('hide')
+            })
+        })
+    </script>
+    <div>
+        <main>
+            <form id="testimonials">
+                <h2>Contact us</h2>
+                <p class="instruction">Fields marked with <span class="asterisk">*</span> are important</p>
+                <div class="field">
+                    <label for="fname">Name: <span class="asterisk">*</span></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="John"><br>
+                </div>
+        
+                <div class="field">
+                    <label for="email">Email: <span class="asterisk">*</span></label><br>
+                    <input type="email" name="email" id="email" placeholder="johndoe123@hotmail.com"><br>
+                </div>
+        
+                <div class="field">
+                    <label for="phone">Contact No.: <span class="asterisk">*</span></label><br>
+                    <input type="tel" name="phone" id="phone" placeholder="9876543210"><br>
+                </div>
+        
+                <div class="field">
+                    <label for="feedback">Feedback: <span class="asterisk">*</span></label><br>
+                    <textarea name="feedback" id="feedback" cols="70" rows="5"></textarea><br>
+                </div>
+        
+                <div class="field">
+                    <input type="submit" value="Submit">
+                </div>    
+            </form>
+        </main>
+    </div>
+    <footer>
+        <strong>Made with &#128151; by Anurag Singh</strong>
+    </footer>
+    <script src="../scripts/about.js"></script>
+</body>
+</html>

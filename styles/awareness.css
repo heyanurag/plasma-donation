@@ -1,0 +1,31 @@
+h1 {
+    font-family: 'Inconsolata';
+    text-align: center;
+    margin: 100px 50px 0px 50px;
+}
+
+.container {
+    margin-top: 60px;
+    margin-bottom: 81px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .photo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}
+
+.container .info p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: Inconsolata;
+}
+
+.container .info ul li {
+    font-size: 25px;
+    font-family: Inconsolata;
+}

@@ -1,0 +1,72 @@
+main {
+    padding-top: 5vh;
+    margin: 0 2.5%;
+    min-height: 83vh;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid rgb(85, 2, 2);
+    background-color: #fafafa;
+}
+  
+.tab a {
+    font-family: 'Inconsolata';
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #fafafa;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(85, 2, 2);
+}
+
+.tab a:hover {
+    background-color: #f1f1f1;
+}
+
+a.tablinks:first-child {
+    margin-left: 430px;
+}
+
+#content {
+    padding: 6px 12px;
+    border: 1px solid #353535;
+    border-top: none;
+    background-color: #f4f4f4;
+}
+
+#content .tabcontent .text-center #heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+#content .tabcontent .text-center {
+    text-align: center;
+}
+
+#content .tabcontent .details, 
+#content .tabcontent .details p,
+#content .tabcontent .details ul li  {
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content .tabcontent .details img#landscape{
+    margin: 30px;
+    width: 1200px;
+    padding-left: 100px;
+}
+
+#content .tabcontent .details img {
+    margin: 30px;
+    padding-left: 350px;
+}
+
+#content .tabcontent .details div h3 {
+    color: #FF6F91;
+}

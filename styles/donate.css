@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(180deg, #ffffff, #e9e9e9);
+}
+
+body#feedback-form{
+    margin: 0;
+    padding: 0;
+}
+
+#feedback-form main{
+    padding: 15vh 0;
+    margin: 0 2.5%;
+}
+
+#donations{
+    padding: 15px;
+    background-color: #e9e9e9;
+    box-shadow: 0 4px 6px -1px #35353535, 0 2px 4px -1px #35353535;
+}
+
+#donations h2.instruction{
+    text-align: center;
+}
+
+#donations p.instruction{
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+#donations .asterisk{
+    color: red;
+}
+
+#donations .field{
+    margin: 15px 5px;
+    color: #565656;
+}
+
+#donations .field label{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+#donations .field label:first-child{
+    padding-right: 7.5px;
+    padding-bottom: 10px;
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+#donations .field input, #donations .field textarea{
+    outline: 0;
+    border-radius: 0;
+    border: 0;
+    margin: 10px 0;
+    padding: 10px 7.5px;
+    font-size: 0.85em;
+}
+
+#donations .field input[type="text"], #donations .field input[type="email"], #donations .field input[type="tel"]{
+    width: 100%;
+    border-bottom: 1px solid rgb(52, 116, 211);
+}
+
+#donations .field textarea{
+    border: 1px solid rgb(52, 116, 211);
+    width: 100%;
+    resize: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#donations input.valid, #donations textarea.valid{
+    border-bottom: 1px solid #36cc36 !important;
+    border: 1px solid #36cc36;
+}
+
+#donations input.invalid, #donations textarea.invalid{
+    border-bottom: 1px solid #aa180d !important;
+    border: 1px solid #aa180d;
+}
+
+#donations input.invalid ~ p, #donations textarea.invalid ~ p{
+    margin: 5px 0 25px;
+    font-size: small;
+    color: #aa180d;
+    font-weight: 600;
+}
+
+#donations .field input::placeholder, #donations .field textarea::placeholder{
+    color: rgb(185, 185, 185);
+}
+
+#donations .field input[type="submit"]{
+    padding: 7px 10px;
+    background-color: #5680e9;
+    color: white;
+}
+
+#donations .field input[type="submit"]:hover{
+    background-color: white;
+    color: #5680e9;
+    cursor: pointer
+}
+
+@media(min-width: 576px) {
+    #feedback-form main{
+        margin: 0 10%;
+    }
+}
+
+@media(min-width: 768px) {
+    #feedback-form main{
+        margin: 0 15%;
+    }
+}
+
+@media(min-width: 992px) {
+    body{
+        font-size: 1.05em;
+    } 
+
+    #feedback-form main{
+        margin: 0 22.5%;
+    }
+}
+
+@media(min-width: 1200px) {
+    #feedback-form main{
+        margin: 0 30%;
+    }
+}

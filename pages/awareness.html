@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/index.css" rel="stylesheet" />
+    <link href="../styles/awareness.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Inconsolata&family=Lexend+Mega&family=Arapey&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Awareness</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><p>D&#128151;nating&nbsp;Plasma</p></li>
+            <li class="nav-links"><a href="../index.html">Home</a></li>
+            <li class="nav-links"><a href="./plasma-donation.html">Plasma Donation</a></li>
+            <li class="nav-links"><a href="#">International Plasma Awareness Week</a></li>
+            <li class="nav-links"><a href="./about.html">About us</a></li>
+            <li class="nav-button"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+    $(document).ready(function() {
+        $('.nav-button').click(function() {
+        $('.nav-links').toggleClass('show')
+        $('ul li').toggleClass('hide')
+        })
+    })
+    </script>
+    <h1>Mark your calendars! The 2021 International Plasma Awareness Week (IPAW) will be held October 4-8.</h1><br><br>
+    <div class="container">
+        <div class="photo">
+            <img src="../images/IPAW.png" alt="IPAW">
+        </div>
+        <div class="info">
+            <p>This event is held annually and is designed to:</p>
+            <ul>
+                <li>Raise global awareness about source plasma collection</li>
+                <li>Recognize the contributions of plasma donors to saving and improving lives</li>
+                <li>Increase understanding about lifesaving plasma protein therapies and rare diseases</li>
+                <li>Events will be held at plasma collection centers in both the U.S. and Asia. To learn more about how you can get involved, <a href="https://www.donatingplasma.org/international-plasma-awareness-week/get-involved">click here</a></li>
+                <li>Use the <a href="https://www.donatingplasma.org/international-plasma-awareness-week/media-center">IPAW Media Center</a> to help plan and execute an IPAW event at your organization. The Media Center contains a toolkit of information resources including logos, press releases, infographics, a social media kit, and more.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <strong>Made with &#128151; by Anurag Singh</strong>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/index.css" rel="stylesheet" />
+    <link href="../styles/plasma-donation.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Inconsolata&family=Lexend+Mega&family=Arapey&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Plasma Donation</title>
+</head>
+<body ng-app="myApp">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><p>D&#128151;nating&nbsp;Plasma</p></li>
+                <li class="nav-links"><a href="../index.html">Home</a></li>
+                <li class="nav-links"><a href="#">Plasma Donation</a></li>
+                <li class="nav-links"><a href="./awareness.html">International Plasma Awareness Week</a></li>
+                <li class="nav-links"><a href="./about.html">About us</a></li>
+                <li class="nav-button"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(document).ready(function() {
+            $('.nav-button').click(function() {
+                $('.nav-links').toggleClass('show')
+                $('ul li').toggleClass('hide')
+            })
+            })
+        </script>
+    </header>
+    <main>
+        <div class="tab">
+            <a class="tablinks" href="#!what-is-plasma">What is Plasma?</a>
+            <a class="tablinks" href="#!who-needs-plasma-therapies">Who needs Plasma Therapies?</a>
+            <a class="tablinks" href="#!donor-faq">Donor FAQ</a>
+        </div>
+        
+        <div id="content">
+            <div class="tabcontent" ng-view></div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("/what-is-plasma", {
+                templateUrl : "./plasma-donation-routes/what-is-plasma.html"
+            })
+            .when("/who-needs-plasma-therapies", {
+                templateUrl : "./plasma-donation-routes/plasma-therapies.html"
+            })
+            .when("/donor-faq", {
+                templateUrl : "./plasma-donation-routes/donor-faq.html"
+            })
+            .otherwise({
+                templateUrl : "./plasma-donation-routes/default.html"
+            });
+        });
+    </script>
+    <footer>
+        <strong>Made with &#128151; by Anurag Singh</strong>
+    </footer>
+</body>
+</html>

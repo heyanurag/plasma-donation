@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="centres.xsl" type="text/xsl" ?>
+<!-- <?xml-stylesheet href="centres.css" type="text/css" ?> -->
+
+<centres>
+    <h1>Plasma Donation Centres</h1>
+    <centre>
+        <name>Sri Venkateswara Institute of Medical Sciences</name>
+        <address>Alipiri Road, Tirupati, Andhra Pradesh 517501</address>
+        <phone>0877 2287777</phone>
+    </centre>
+    <centre>
+        <name>Gauhati Medical College and Hospital</name>
+        <address>Bhangagarh, Guwahati, Assam 781032</address>
+        <phone>0361 2139220</phone>
+    </centre>
+    <centre>
+        <name>AIIMS Patna</name>
+        <address>Phulwarisharif, Patna, Bihar 801507</address>
+        <phone>0612 2451044</phone>
+    </centre>
+    <centre>
+        <name>PGIMER</name>
+        <address>Madhya Marg, Sector 12, Chandigarh 160012</address>
+        <phone>0172 2755485</phone>
+    </centre>
+    <centre>
+        <name>Guru Teg Bahadur (GTB) Hospital</name>
+        <address>Tahirpur Road, GTB Enclave, Dilshad Garden, New Delhi, Delhi 110095</address>
+        <phone>011 2258 6262</phone>
+    </centre>
+    <centre>
+        <name>Sardar Vallabhbhai Patel Institue of Medical Sciences and Research (SVPIMSR)</name>
+        <address>Ellisbridge, Ahmedabad, Gujarat 380006</address>
+        <phone>079 26436666</phone>
+    </centre>
+</centres>

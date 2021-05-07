@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Inconsolata&family=Lexend+Mega&family=Arapey&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Donating Plasma</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><p>D&#128151;nating&nbsp;Plasma</p></li>
+            <li class="nav-links"><a href="#">Home</a></li>
+            <li class="nav-links"><a href="pages/plasma-donation.html">Plasma Donation</a></li>
+            <li class="nav-links"><a href="pages/awareness.html">International Plasma Awareness Week</a></li>
+            <li class="nav-links"><a href="pages/about.html">About us</a></li>
+            <li class="nav-button"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function() {
+        $('.nav-button').click(function() {
+            $('.nav-links').toggleClass('show')
+            $('ul li').toggleClass('hide')
+        })
+        })
+    </script>
+    <div class="image">
+        <div class="headline">
+            <h1>Be the reason someone smiles today!</h1>
+            <a class="header-button" href="pages/donate.html">Donate Now</a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="images/girl_donating_plasma.jpg" alt="A girl donating plasma" />
+        <p>Plasma often is referred to as the <strong><em>"gift of life"</em></strong> because it is the essential starting material needed to manufacture
+        therapies that help thousands of people worldwide with rare, chronic diseases to live healthier, productive and fulfilling lives.<br /><br /><br /> 
+        Patients all over the world surviving not only COVID-19 but other diseases rely on plasma protein therapies to treat rare, chronic diseases.
+        These individuals rely on the generosity and commitment of plasma donors like you.</p>
+    </div>
+    <div class="hashtag">
+        <h1>#Everyone could be a hero</h1>
+    </div>
+    <div class="container">
+        <div class="box hi">
+            <h3>WHO?</h3>
+            <p>Learn more about being a qualified donor.</p>
+            <button type="button" onClick="window.location='pages/plasma-donation.html#!/donor-faq'">Learn more</button>
+        </div>
+        <div class="box">
+            <h3>HOW?</h3>
+            <p>Learn more about the plasma donation experience.</p>
+            <button type="button" onClick="window.open('https://www.youtube.com/watch?v=eZX1dsZWQsI', '_blank')">Learn more</button>
+        </div>
+        <div class="box hi">
+            <h3>WHY?</h3>
+            <p>Learn more about how you can save and improve lives.</p>
+            <button type="button" onClick="window.location='pages/plasma-donation.html#!/what-is-plasma'">Learn more</button>
+        </div>
+        <div class="box">
+            <h3>WHERE?</h3>
+            <p>Find a plasma donation center near you.</p>
+            <button type="button" onClick="window.location='pages/xml/centres.xml'">Learn more</button>
+        </div>
+    </div>
+    <footer>
+        <strong>Made with &#128151; by Anurag Singh</strong>
+    </footer>
+</body>
+</html>
